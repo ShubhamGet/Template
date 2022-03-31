@@ -1,0 +1,252 @@
+/* css reset */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: ;
+}
+/* first container decoration, ie. containerB */
+.box6{
+	border: 0px solid red;
+	height: 40px;
+	width: 140px;
+	margin-left: 100px;
+	display: flex;
+}
+.box6 img{
+	margin-top: 5px;
+}
+.box7{
+	border: 0px solid red;
+	height: 40px;
+	width: 150px;
+	margin-left: 850px;
+	color: white;
+}
+.box7 h4{
+	margin-top: 10px;
+}
+#containerB{
+	border:0px solid red;
+	height: 45px;
+	width: 100vw;
+	background: blue;
+	display: flex;
+}
+/* for this div i.e all for navbar*/
+#containerC{
+	border:0px solid red;
+	height: 60px;
+	width: 100vw;
+	background: white;
+	display: flex;
+}
+.box1{
+	border: 0px solid red;
+	height: 50px;
+	width: 45px;
+	margin-top: 5px;
+	margin-left: 200px;
+}
+#containerC h3{
+	margin-top: 15px;
+	margin-left: 5px;
+}
+#navbar ul{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: 100px;
+}
+#navbar ul li{     /* here we used two property list-style:- remove the underline and margin b/w ul li */
+	list-style: none;
+	margin: 15px;
+}
+#navbar ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	border-radius: 20px;
+	padding: 5px 5px;
+}
+#navbar ul li a:hover{
+	background: blue;
+
+}
+#navbar ul input{
+	border: 0x solid black;
+	border-radius: 20px;
+	height: 30px;
+	width: 150px;
+	margin-top: 15px;
+	margin-left: 40px;
+}
+/* here navbar decurations are finished*/
+#containerA::before{
+	content: "";
+	background:url("E:/css/doct.jpg") no-repeat center center/cover;
+	position: absolute;
+	height: 900px;
+	width: 100vw;
+	z-index: -1;
+}
+/* body contents desing*/
+h1{
+	margin: 120px;
+	color: blue;
+}
+h3{
+	margin: 1px;
+}
+/* second body desing */
+#containerS{
+	border: 0px solid red;
+	height: 600px;
+	width: 100vw;
+	margin-top: 380px;
+	background: white;
+}
+#containerS p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+}
+#containerS h4{
+	text-align: center;
+	justify-content: center;
+}
+/* three photo desing decoration */
+#containerSS{
+	border: 0px solid red;
+	height: 315px;
+	width: 100vw;
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+.box2{
+	border: 0px solid red;
+	border-radius: 15px;
+	height: 200px;
+	width: 300px;
+	margin-top: 30px;
+	margin: 30px;
+}
+.box2 h2{
+	text-align: center;
+}
+.box3{
+	border: 2px solid blue;
+	border-radius: 10px;
+	padding: 5px;
+	height:78px;
+	width: 300px;
+	margin-top: 5px;
+	background-image: linear-gradient( green, yellow);
+}
+h3{     /* <-------------------------- here by any parent class h3 is doing work as want to */
+	text-align: center;
+	margin-top: 20px;
+}
+/* bottom of decoration */
+#box4{
+	border: 0px solid red;
+	height: 100px;
+	width: 100vw;
+	margin-top: 5px;
+	display: flex;
+}
+.box5{
+	border: 0px solid red;
+	height: 60px;
+	width: 400px;
+	margin: 20px;
+	padding: 1px;
+}
+.box8{
+	border:0px solid red;
+	height: 60px;
+	width: 60px;
+	margin-top: 20px;
+}
+/* media Query process */
+@media(max-width:1220px){  /* it's used for reduce the marging left, for making responsive */
+    .box7{
+	border: 0px solid red;
+	height: 40px;
+	width: 150px;
+	margin-left: 554px;
+	color: white;
+  }
+}
+@media(max-width:1148px){
+	.box1{
+	border: 0px solid red;
+	height: 50px;
+	width: 45px;
+	margin-top: 5px;
+	margin-left: 5px;
+   }
+}
+@media(max-width:1043px){
+	#containerSS{
+	border: 0px solid red;
+	height: 315px;
+	width: 100vw;
+	margin-top: 5px;
+	justify-content: center;
+   }
+   .box3{
+	border: 0px solid blue;
+	border-radius: 10px;
+	padding: 5px;
+	height:78px;
+	width: 200px;
+	margin-top: 5px;
+	overflow: scroll;
+	margin-left: 30px;
+	background-image: linear-gradient(rgba(0, 255, 0, 0.0), rgba(0, 255, 0, 1.0));
+	/* this used for make background image in gradient view */
+	color: blue;
+  }
+}
+@media(max-width:1043px){
+	#containerSS{
+	border: 0px solid red;
+	height: 315px;
+	width: 100vw;
+	margin-top: 5px;
+	justify-content: center;
+   }
+   .box2{
+	border: 0px solid red;
+	border-radius: 15px;
+	height: 200px;
+	width: 245px;
+	margin-top: 30px;
+	margin: 30px;
+  }
+}
+@media(max-width:1043px){
+	#containerSS{
+	border: 0px solid red;
+	height: 315px;
+	width: 100vw;
+	margin-top: 5px;
+	justify-content: center;
+   }
+   .box5{
+	border: 0px solid red;
+	height: 60px;
+	width: 400px;
+	margin: 20px;
+	padding: 1px;
+	background-image: linear-gradient(blue, green, yellow);
+	/* this used for make background image in gradient view */
+  }
+}
+
+
+
+
